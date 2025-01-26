@@ -1,21 +1,38 @@
 [![Check Assignment](https://github.com/sta523-fa24/project-caramel_latte/workflows/Check%20Assignment/badge.svg)](https://github.com/sta523-fa24/project-caramel_latte/actions?query=workflow:%22Check%20Assignment%22)
 
 
-Sta 523 - Final Project
+
 -----------
 
-Completed final project is due by 5:00 pm on Wednesday, December 11th.
+This is the final project of Sta 523, implemented by caramel-latte team(Binqian Chai and Bohao Yang).
 
-## Guidelines
+## About this Shiny App
 
-1. The primary goal of the project is to do something interesting using something related to the course. This is purposefully open ended to give you the opportunity to work on something you are interested in and to produce work that you could potentially show to a prospective employer or use as part of your graduation portfolio.
- 
-1. The primary way in which you will be evaluate will be based on the evidence of effort in your project and the quality of the write up. What this means is that a "failed" project (e.g. an analysis without a significant result) that is well documented will receive a better grade than a less ambitious "successful" project with a worse write up. 
-  
-    The expectation is that most projects should be roughly 5-15 pages - including text, code, figures, and other output. This is meant only as a very rough guide to calibrate your work (there are no penalties for the report being too short or too long).
+The city of Los Angeles, a popular place for both domestic travelers and international tourists, offers endless attractions but also faces complex safety challenges. With safety being a crucial priority for both visitors and residents, crime analysis becomes the topic of interest. This project aims to be informative and is divided into two distinct parts: Exploratory Data Analysis (EDA) and an interactive Shiny app. We will use the Los Angeles Crime Data from Kaggle, focusing on the most relevant period from January to mid-April 2024. The found dataset is saved and uploaded as "crime2024.xlsx". The library "readxl" is used to load the data.
 
-1. We have included a very bare template, `project.qmd` which only includes basic section headings. Feel free to add, adjust, remove these as needed to fit your specific project, they are included only as general guidelines for structuring your write up.
+The first part focuses on Exploratory Data Analysis (EDA), where we analyze patterns in the found dataset to uncover meaningful insights about crime trends. By examining temporal, geographic, and demographic aspects of the data, the EDA reveals key patterns, such as which months and weekdays are associated with higher crime rates, the types of crimes most frequently reported, and how crime varies across different areas in Los Angeles. This analysis not only reveals the current trends but also provides actionable insights into potential contributing factors, such as seasonal activity, socioeconomic disparities, and urban characteristics.
 
-1. You may include all of your code in the qmd document or in one or more R script files - make sure your write up makes it clear how the code is meant to be run and how your results can reproduced. Additional data files and other supplementary materials are also fine as long as they are neatly organized and explicitly discussed in the write up.
+The second part involves the creation of a Shiny app, aimed at providing users with an interactive platform to explore crime data in Los Angeles. The app is designed to help users make informed decisions about their travel and movement within the city by offering accessible, data-driven insights. Users can interact with a city map, which uses color-coded markers to represent crime density by area. Filters allow users to explore crime trends based on their selected date range, while bar charts display the top areas with the highest crime rates for comparison. A detailed table further enables users to investigate individual crime incidents, including the date, time, location, and type of crime. Together, these features provide a comprehensive and user-friendly tool for exploring crime patterns.
 
-1. We have included a basic github action to render your project - if there are issues with this (e.g. data is too large to include, package dependency issues, etc.) then you are welcome to instead include the rendered html in your repository. If you do this, please make sure to include the raw qmd file as well so that we can see the code. In this case you are also welcome to delete or disable the GitHub Action.
+By combining EDA and the Shiny app, this project achieves a dual purpose: to analyze and interpret crime data for meaningful insights, and to provide an interactive platform that provides users with a deeper understanding of safety trends in Los Angeles. Through these efforts, we aim to enhance public awareness, support better decision-making, and contribute to a safer community.
+
+---
+## Variable Explanation
+
+The following are the definitions or brief explanations of variables (column names in the dateset) that will be used inside the project.
+1) DATE OCC: the date crime occurred in YYYY-MM-DD
+2) TIME OCC: the time (in 24 hour military time) crime occurred
+3) AREA NAME: the geographic area name in the city of Los Angeles that references a landmark or the surrounding community that the crime occurred
+4) Part 1-2: crime severity with 1 referring to "serious" and 2 referring to "less serious"
+5) Crm Cd Desc: a short phrase describing the crime (type)
+6) Vict Descent: the descent of victims (The descent code will be explicitly definined in the Implementation section.)
+7) Premis Desc: the type of location where the crime occurred
+8) LAT: the specific latitude where the crime actually occurred
+9) LON: the specific longitude where the crime actually occurred
+
+---
+## Implications
+While this project focuses on Los Angeles, the methods and tools developed can be adapted for other cities and datasets. Expanding the temporal range, incorporating additional demographic and socioeconomic data, or integrating predictive analytics could further enhance crime analysis capabilities. Policymakers and law enforcement agencies could use these insights to design data-driven strategies, optimize resource allocation, and engage communities in crime prevention efforts.
+
+Ultimately, our project shows the value of making crime data accessible and interactive. By providing users with intuitive tool and detailed insights, we aim to advocate a safer community and enhance the understanding of crime dynamics.
+
