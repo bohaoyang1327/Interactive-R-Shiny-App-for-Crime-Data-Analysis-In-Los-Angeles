@@ -6,6 +6,10 @@
 
 This is the final project of Sta 523, implemented by caramel-latte team(Binqian Chai and Bohao Yang).
 
+🪼 To check the updated version of our app: [Crime in LA](https://9h46ku-lexi-yang.shinyapps.io/project_shiny/)
+
+----
+
 ## About this Shiny App
 
 The city of Los Angeles, a popular place for both domestic travelers and international tourists, offers endless attractions but also faces complex safety challenges. With safety being a crucial priority for both visitors and residents, crime analysis becomes the topic of interest. This project aims to be informative and is divided into two distinct parts: Exploratory Data Analysis (EDA) and an interactive Shiny app. We will use the Los Angeles Crime Data from Kaggle, focusing on the most relevant period from January to mid-April 2024. The found dataset is saved and uploaded as "crime2024.xlsx". The library "readxl" is used to load the data.
